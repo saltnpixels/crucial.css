@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="curcial.css" />
+    <link rel="stylesheet" href="utilities.css" />
+    <style>
+      .box {
+        height: 200px;
+        background: rgb(19, 19, 19);
+        color: white;
+        padding: var(--gutter);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .card-grid .box {
+        margin: 0;
+      }
+
+      .box p,
+      .box h1 {
+        font-size: clamp(1.8rem, 3vw, 4rem);
+      }
+
+      h2 {
+        margin-bottom: 1em;
+        margin-top: 3em;
+      }
+
+      h2:first-child {
+        margin-top: 0;
+      }
+
+      .box span {
+        font-size: clamp(1.4rem, 3vw, 1.6rem);
+        display: block;
+      }
+
+      div .box {
+        border-radius: 15px;
+      }
+
+      .container-left .box {
+        border-radius: 0 15px 15px 0;
+      }
+
+      .container-right .box {
+        border-radius: 15px 0 0 15px;
+      }
+
+      .full-width .box {
+        border-radius: 0;
+      }
+
+      header {
+        margin-bottom: 50px;
+      }
+
+      footer {
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body class="page">
+    <header>
+      <div class="box"><p>I am a box</p></div>
+    </header>
+
+    <div class="vertical-spacing">
+      <div class="container section">
+        <h2>I am text inside a container</h2>
+        <div class="box">
+          <p>I am a box inside a container</p>
+          <span>
+            (Tip: Be wary of styling on the actual container element because its
+            got those crucial paddings on left and right. Probably best to place
+            items inside me and you wont have any layout issues.)
+          </span>
+        </div>
+        <p>
+          I am text inside the container. Lorem ipsum dolor sit amet,
+          consectetur adipisicing elit. Quae, nesciunt, vitae, distinctio
+          molestias amet facere commodi ipsa minima deserunt ut modi repellendus
+          corrupti similique eaque odio sint dicta ullam animi!
+        </p>
+      </div>
+
+      <!-- Container-content -->
+    </div>
+
+    <footer>
+      <div class="box">
+        <p>i stay at the bottom, even when there is little content.</p>
+      </div>
+    </footer>
+  </body>
+</html>

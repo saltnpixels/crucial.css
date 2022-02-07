@@ -1,0 +1,21 @@
+{
+  "name": "crucial.css",
+  "version": "1.0.0",
+  "description": "Crucial CSS sets up your CSS with the what you need to start styling and nothing more.",
+  "main": "crucial.css",
+  "style": "crucial.css",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saltnpixels/crucial.css.git"
+  },
+  "keywords": [
+    "css",
+    "normalize",
+    "crucial",
+    "javascript"
+  ],
+  "author": "Eric Greenfield",
+  "license": "MIT",
+  "homepage": "https://github.com/saltnpixels/crucial.css#readme"
+}
