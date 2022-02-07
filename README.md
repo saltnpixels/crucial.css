@@ -88,7 +88,7 @@ Thats where `.container-content` makes this easy. You surround the article with 
 
 4. WordPress support - you can use `.alignwide` instead of `.container` and `.alignfull` instead of `.full-width`. The classes do the same thing.
 
-### CSS Variables
+## CSS Variables
 
 There are variables found at the bottom of Crucial.CSS and utilities. You can override them in your project, or change them directly. Remember, you can also override variables inside classes and media queries. Here are all the variables:
 
