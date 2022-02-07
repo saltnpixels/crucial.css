@@ -27,10 +27,14 @@ html {
 /* Sections
    ========================================================================== */
 
-/* Sticky Footer, so the footer stays at the bottom even when there is little content */
+/** 
+ * 1.Sticky Footer requires html and body have 100% height, so the footer stays at the bottom even when there is little content 
+ * 2. overflow-x is needed on both elements to hide offscreen items.
+*/
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 body > footer {
@@ -42,18 +46,14 @@ body > footer {
  * 1. Remove the body margin in all browsers. 
  * 2. Add fonts 
  * 3. Add font size
+ * 4. Fixes strange behavior in iOS when we set body to overflow-x hidden
  */
 
 body {
   margin: 0; /* 1 */
   font-family: var(--font-primary); /* 2 */
   font-size: var(--fs-default); /* 3 */
-}
-
-/* Stop overflow-x properly without strange body behaviors */
-body > * {
-  overflow-x: hidden;
-  position: relative;
+  position: relative; /* 4 */
 }
 
 /*

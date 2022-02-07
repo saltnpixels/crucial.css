@@ -22,7 +22,7 @@ However, there still are a few issues. Unlike javascript, CSS still cannot be us
 
 5. Sticky Footer. We use this [elegant solution](https://css-tricks.com/a-clever-sticky-footer-technique/) to make sure your footer is always at the bottom of the site, even when you have very little content on the page. This expects your footer to be directly in the body. If you need your footer inside a div and not directly in the body, you can view and implement these [other solutions](https://css-tricks.com/couple-takes-sticky-footer/).
 
-6. Setting overflow-x so there is no horizontal scrolling. We've all been there... This can happen if an item is absolute and off to the side, even if its hidden. Unfortunately, setting the body to have an overflow-x of "hidden", as many people do, can result in quirky behavior and remove the springiness of the browser in iOS. We instead give direct children of the body the overflow-x of "hidden". Just make sure all your absolute items are **not** direct children of the body. If, on the off chance, you do want horizontal scrolling, simply override this.
+6. Setting overflow-x so there is no horizontal scrolling. We've all been there... This can happen if an item is absolute and off to the side, even if its hidden. We fix it so that it works nicely even on iOS, where the page sometimes can lose its "springiness".
 
 7. Images are responsive. All images will shrink to fit in their containers by default.
 
