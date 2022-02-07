@@ -24,7 +24,7 @@ However, there still are a few issues. Unlike javascript, CSS still cannot be us
 
 6. Setting overflow-x so there is no horizontal scrolling. This can happen if an item is absolute and off to the side, even if its hidden. Unfortunately, setting the body to have an overflow-x of hidden can result in quirky behavior and remove the springiness of the browser in iOS. We instead give direct children of the body the overflow-x of "hidden". Just make sure all your absolute items are **not** direct children of the body. If, on the off chance, you do want horizontal scrolling, simply override this.
 
-7. Images are responsive. All images will shrink to fit in their containers. Yes, this is not a default in the browsers. 🤷‍♂️
+7. Images are responsive. All images will shrink to fit in their containers.
 
 ## Utilities
 
@@ -70,7 +70,7 @@ Then in your CSS, you can override the card-grids sizing. The defaults are:
 .my-elements{
 	--card-min: 250px;
 	--card-max: 1fr;
-	--card-stretch: auto-fill; /* can be auto-fit too */
+--card-stretch: auto-fill; /* can be auto-fit too */
 }
 ```
 
