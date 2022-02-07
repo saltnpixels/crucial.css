@@ -1,60 +1,60 @@
 # Crucial.css
 
-Crucial CSS sets up your CSS with the what you need to start styling and nothing more. Crucial has all the stuff found in [modern normalize](https://github.com/sindresorhus/modern-normalize) to normalize the differences between browsers. It takes things a bit further for you though by implementing a few things that will save you lots of hours of tinkering. It normalizes the differences between the browsers, but then takes the extra few steps to get the CSS working the way you expect based on the most common found web practices. This saves you time and removes a lot of pain points.
+Crucial CSS sets up your CSS with the what you need to start styling and nothing more. Crucial has all the stuff found in [modern normalize](https://github.com/sindresorhus/modern-normalize) to normalize the differences between browsers. It takes things a bit further for you though by implementing a few things that will save you lots of hours of tinkering. Simple things you probably do everytime you make a site, either by yourself or through a framework. From resetting differences between browsers, to fixing the box-sizing, to setting images to be responsive, to font-sizes and more. This saves you time and removes a lot of confusion and pain points.
 
 ## Why Crucial?
 
 The year is 2022, there is no need for a bloated framework anymore. Columns are easy to create by yourself with flexbox and CSS grid. And now with the gap property available on both, there is no more need to use padding to come up with some over-complicated math-based column system. And most utilities can be made yourself when you need them.
 
-However, there still are a few issues. Unlike javascript, CSS still cannot be used out of the box in a real project. The reality is, CSS has a few weird quirks that need to be dealt with. From resetting differences between browsers, to fixing the box-sizing, to setting images to be responsive, and more. Because of this, a lot of people tend to reach for a bloated framework when all they really need is a few simple fixes and a little setup. Crucial aims to do that, while not being overwhelming.
+However, there still are a few issues. Unlike javascript, CSS still cannot be used out of the box in a real project. The reality is, CSS has a few weird quirks that need to be dealt with. Crucial aims to do that, while not being overwhelming.
 
 ## Crucial Features
 
-1. We set box-sizing to border-box using the [css-tricks](https://css-tricks.com/box-sizing/) method for better inheritance. Box-sizing is **crucial** to be set up at the beginning of a project, or it can become a nightmare later on. Trust me.
+1. We set box-sizing to border-box, using the [css-tricks](https://css-tricks.com/box-sizing/) method for better inheritance. Box-sizing is **crucial** to be set up at the beginning of a project, or it can become a nightmare later on. Trust me.
 
-2. We set the root font-size to 62.5%. This makes it super easy to use rem units for your font-sizing. The rem unit is now using a base of 10. No more math! So 1.6rem is 16px, 2.4rem is 24px etc...
+2. We set the root font-size to 62.5%. This makes it super easy to use rem units for your font-sizing. The rem unit is now using a base of 10. No more math! So 1.6rem is 16px, 2.4rem is 24px etc... It's easy!
 
 3. A default font size of 1.6rem (16px), with a line-height of 1.5 has been set for the body and all things that inherit, including inputs. The default font size can be changed with the CSS variable `--fs-default`.
 
-   The line-height of 1.5 is chosen because that is usually the best design practice for practical normal font sizes (12px-30px). For your headings and larger fonts, you may need to increase the line-height.
+   The line-height of 1.5 is chosen because that is usually the best design practice for practical, normal font sizes (12px-30px). For your headings and larger fonts, you may need to increase the line-height.
 
 4. Font-family CSS variable for easy changing of default body font. Change `--font-primary` to your chosen font.
 
-5. Sticky Footer. We use this [elegant](https://css-tricks.com/a-clever-sticky-footer-technique/) solution to make sure your footer is always at the bottom of the site, even when you have very little content on the page. This expects your footer to be directly in the body. If you need your footer inside a div and not directly in the body, you can view and implement these [other solutions](https://css-tricks.com/couple-takes-sticky-footer/).
+5. Sticky Footer. We use this [elegant solution](https://css-tricks.com/a-clever-sticky-footer-technique/) to make sure your footer is always at the bottom of the site, even when you have very little content on the page. This expects your footer to be directly in the body. If you need your footer inside a div and not directly in the body, you can view and implement these [other solutions](https://css-tricks.com/couple-takes-sticky-footer/).
 
-6. Setting overflow-x so there is no horizontal scrolling. This can happen if an item is absolute and off to the side, even if its hidden. Unfortunately, setting the body to have an overflow-x of hidden can result in quirky behavior and remove the springiness of the browser in iOS. We instead give direct children of the body the overflow-x of "hidden". Just make sure all your absolute items are **not** direct children of the body. If, on the off chance, you do want horizontal scrolling, simply override this.
+6. Setting overflow-x so there is no horizontal scrolling. We've all been there... This can happen if an item is absolute and off to the side, even if its hidden. Unfortunately, setting the body to have an overflow-x of "hidden", as many people do, can result in quirky behavior and remove the springiness of the browser in iOS. We instead give direct children of the body the overflow-x of "hidden". Just make sure all your absolute items are **not** direct children of the body. If, on the off chance, you do want horizontal scrolling, simply override this.
 
-7. Images are responsive. All images will shrink to fit in their containers.
+7. Images are responsive. All images will shrink to fit in their containers by default.
 
 ## Utilities
 
-Ok, so maybe a few utilities could be helpful. Only a few!! Based on most websites out there, we created 8 utility classes that can be added in optionally by including the utilities file. These provide some nifty layout classes to get you started. There are so little that we can just list them here. Sizing can be changed through the variables listed below.
+Ok, so maybe a few utilities could be helpful. Only a few! Based on most websites out there, we created 8 utility classes that can be added in optionally by including the utilities file. These provide some basic and nifty layout classes to get you started, and to get any complexity out of the way. Sizing can be changed through the variables listed down below.
 
-### `.container-fluid`
+#### `.container-fluid`
 
 creates your typical everyday container that goes full width. It just gives you padding on both the right and left, so your content is not up against the viewport edges.
 
-### `.container`
+#### `.container`
 
 Like above, except it's got a max-width of 1200px (you can change this via the CSS variables).
 
-### `.container-left`
+#### `.container-left`
 
 A cool class that makes a container that goes all the way to the left edge, but starts at where a normal container would start on its right side.
 
-### `.container-right`
+#### `.container-right`
 
 A cool class that makes a container that goes all the way to the right edge, but starts at where a normal container would start on its left side.
 
-### `.screen-reader-text`
+#### `.screen-reader-text`
 
 Important! For elements that will be read out loud on a screen reader device, but will be hidden on regular browsers. Good for ADA compliance.
 
-### `.vertical-spacing`
+#### `.vertical-spacing`
 
 Very helpful for articles. Makes all items inside magically have good vertical rhythm. For some items, like headings, you may want to add styles to get those having more spacing with margins. Pairs well with container-content.
 
-### `.card-grid`
+#### `.card-grid`
 
 The perfect grid of cards! Using CSS Grid can be a bit scary, so we created a grid of cards that reflow nicely and can have a min and max size, changeable through CSS variables. It's cleaner than using flexbox for grids.
 
@@ -74,7 +74,7 @@ Then in your CSS, you can override the card-grids sizing. The defaults are:
 }
 ```
 
-### `.container-content`
+#### `.container-content`
 
 This one is the last and most complex. It's very helpful for articles or the main content on a blog page. A lot of CMS's simply dump out the article and you have no control over the inner elements and their widths. For article text, you want a thin line width for easy reading, but for an image, or slideshow in the middle, you want to break out of that small container and go full width.
 
