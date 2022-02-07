@@ -1,8 +1,6 @@
 <div align="center">
 	<img src="media/crucial-logo.svg" alt="crucial.css logo">
 	<br/>
-	<br/>
-	<br/>
 </div>
 
 # Crucial.css
