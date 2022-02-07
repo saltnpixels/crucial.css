@@ -1,6 +1,6 @@
 # Crucial.css
 
-Crucial CSS sets up your CSS with the what you need to start styling and nothing more. Crucial has all the stuff found in [modern normalize](https://github.com/sindresorhus/modern-normalize) to normalize the differences between browsers. It takes things a bit further for you though by implementing a few things that will save you lots of hours of tinkering. Simple things you probably do everytime you make a site, either by yourself or through a framework. From resetting differences between browsers, to fixing the box-sizing, to setting images to be responsive, to font-sizes and more. This saves you time and removes a lot of confusion and pain points.
+Crucial CSS sets up your CSS with what you need to start styling and nothing more. Crucial has all the stuff found in [modern normalize](https://github.com/sindresorhus/modern-normalize) to normalize the differences between browsers. It takes things a bit further for you though by implementing a few things that will save you lots of hours of tinkering. Simple things you probably do everytime you make a site, either by yourself or through a framework. From resetting differences between browsers, to fixing the box-sizing, to setting images to be responsive, to font-sizes and more. This saves you time and removes a lot of confusion and pain points.
 
 ## Why Crucial?
 
