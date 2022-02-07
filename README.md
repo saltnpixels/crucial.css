@@ -68,9 +68,9 @@ Then in your CSS, you can override the card-grids sizing. The defaults are:
 
 ```CSS
 .my-elements{
-	--card-min: 250px;
-	--card-max: 1fr;
---card-stretch: auto-fill; /* can be auto-fit too */
+  --card-min: 250px;
+  --card-max: 1fr;
+  --card-stretch: auto-fill; /* can be auto-fit too */
 }
 ```
 
