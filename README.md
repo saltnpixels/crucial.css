@@ -119,3 +119,46 @@ There are variables found at the bottom of Crucial.CSS and utilities. You can ov
   --z-index-behind: -1;
 }
 ```
+
+## Browser support
+
+- Latest Chrome
+- Latest Firefox
+- Latest Safari
+
+## Install With NPM
+
+```
+$ npm install crucial.css
+```
+
+### Usage With NPM
+
+```css
+@import "node_modules/crucial.css/crucial.css";
+/* optional */
+@import "node_modules/crucial.css/utilities.css";
+```
+
+or
+
+```html
+<link rel="stylesheet" href="node_modules/crucial.css/crucial.css" />
+<link rel="stylesheet" href="node_modules/crucial.css/utilities.css" />
+```
+
+## Install With CDN
+
+You can pull it in from a cdn
+
+- [unpkg](https://unpkg.com/crucial.css@1.0.0/curcial.css)
+
+### Usage With CDN
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/crucial.css@1.0.0/crucial.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/crucial.css@1.0.0/utilities.css"
+/>
+```
