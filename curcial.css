@@ -35,6 +35,7 @@ html,
 body {
   height: 100%;
   overflow-x: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 body > footer {
@@ -53,7 +54,6 @@ body {
   margin: 0; /* 1 */
   font-family: var(--font-primary); /* 2 */
   font-size: var(--fs-default); /* 3 */
-  position: relative; /* 4 */
 }
 
 /*
