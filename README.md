@@ -188,3 +188,4 @@ You can pull it in from a CDN
 ```
 
 If you feel there is something missing from Crucial, please reach out!
+Shout out to Chris Coyer for teaching me CSS tips and tricks over the years. A lot of the major ones made it into Crucial.
