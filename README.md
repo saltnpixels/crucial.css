@@ -31,6 +31,8 @@ However, there still are a few issues. Unlike javascript, CSS still cannot be us
 
 7. Unordered lists found in a nav element have styles removed.
 
+8. Headings have had their margins removed. This will force you to make conscious decisions for the margins and not rely on the default browsers.
+
 ## Utilities
 
 Ok, so maybe a few utilities could be helpful. Only a few! Based on most websites out there, we created **9** utility classes that can be added in optionally by including the utilities file. These provide some basic and nifty layout classes to jumpstart your project, and to get any complexity out of the way. Sizing can be changed through the variables listed down below.
