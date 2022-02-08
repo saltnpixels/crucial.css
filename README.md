@@ -25,15 +25,13 @@ However, there still are a few issues. Unlike javascript, CSS still cannot be us
 
 4. Font-family CSS variable for easy changing of default body font. Change `--font-primary` to your chosen font.
 
-5. Sticky Footer. We use this [elegant solution](https://css-tricks.com/a-clever-sticky-footer-technique/) to make sure your footer is always at the bottom of the site, even when you have very little content on the page. This expects your footer to be directly in the body. If you need your footer inside a div and not directly in the body, you can view and implement these [other solutions](https://css-tricks.com/couple-takes-sticky-footer/).
+5. Sticky Footer. We use this [elegant solution](https://css-tricks.com/a-clever-sticky-footer-technique/) to make sure your footer is always at the bottom of the site, even when you have very little content on the page. This expects your footer to be directly in the body, or directly inside a `.page-wrap` element. If you need a different setup with sticky footer, you can view and implement these [other solutions](https://css-tricks.com/couple-takes-sticky-footer/).
 
-6. Setting overflow-x so there is no horizontal scrolling. We've all been there... This can happen if an item is absolute and off to the side, even if its hidden. We fix it so that it works nicely even on iOS, where the page sometimes can lose its "springiness".
-
-7. Images are responsive. All images will shrink to fit in their containers by default.
+6. Images are responsive. All images will shrink to fit in their containers by default.
 
 ## Utilities
 
-Ok, so maybe a few utilities could be helpful. Only a few! Based on most websites out there, we created 8 utility classes that can be added in optionally by including the utilities file. These provide some basic and nifty layout classes to get you started, and to get any complexity out of the way. Sizing can be changed through the variables listed down below.
+Ok, so maybe a few utilities could be helpful. Only a few! Based on most websites out there, we created **9** utility classes that can be added in optionally by including the utilities file. These provide some basic and nifty layout classes to get you started, and to get any complexity out of the way. Sizing can be changed through the variables listed down below.
 
 #### `.container-fluid`
 
@@ -59,6 +57,24 @@ Important! For elements that will be read out loud on a screen reader device, bu
 
 Very helpful for articles. Makes all items inside magically have good vertical rhythm. For some items, like headings, you may want to add styles to get those having more spacing with margins. Pairs well with container-content.
 
+#### `.page-wrap`
+
+The page wrap is a special element when dealing with overflow-x. It's useful when you have absolute items positioned off the screen, but don't want horizontal scrolling, like a hidden mobile menu. This class fixes it, so that it works nicely even on iOS, where things can get wonky. You can implement it directly on the body element, or on a div that is a direct child of body.
+
+```HTML
+<body class="page-wrap">
+		Everything....
+</body>
+
+OR
+
+<body>
+	<div class="page-wrap">
+		Everything....
+	</div>
+</body>
+```
+
 #### `.card-grid`
 
 The perfect grid of cards! Using CSS Grid can be a bit scary, so we created a grid of cards that reflow nicely and can have a min and max size, changeable through CSS variables. It's cleaner than using flexbox for grids.
@@ -66,16 +82,16 @@ The perfect grid of cards! Using CSS Grid can be a bit scary, so we created a gr
 How to use:
 
 ```HTML
-<div class="card-grid my-elements">...</div>
+<div class="card-grid custom-class">...</div>
 ```
 
-Then in your CSS, you can override the card-grids sizing. The defaults are:
+Then in your CSS, you can override the card-grids sizing, using a custom class. The defaults are:
 
 ```CSS
-.my-elements{
+.custom-class{
   --card-min: 250px;
   --card-max: 1fr;
-  --card-stretch: auto-fill; /* can be auto-fit too */
+  --card-stretch: auto-fill; /* can also be auto-fit */
 }
 ```
 
@@ -95,7 +111,7 @@ Thats where `.container-content` makes this easy. You surround the article with 
 
 ## CSS Variables
 
-There are variables found at the bottom of Crucial.CSS and utilities. You can override them in your project, or change them directly. Remember, you can also override variables inside classes and media queries. Here are all the variables:
+There are variables found at the bottom of Crucial.CSS and utilities. You can override them in your project, or change them directly. Remember, you can also override variables inside classes and media queries, which is super helpful. Here are all the variables:
 
 ```CSS
 :root {
@@ -130,6 +146,7 @@ There are variables found at the bottom of Crucial.CSS and utilities. You can ov
 - Latest Chrome
 - Latest Firefox
 - Latest Safari
+- Latest Edge
 
 ## Install With NPM
 

@@ -21,6 +21,23 @@
   word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
+/* 
+Special div to fix overflow-x on absolute items.
+ This should be at the top level item inside body
+ */
+.page-wrap {
+  overflow-x: hidden;
+}
+
+div.page-wrap {
+  position: relative;
+  min-height: 100%;
+}
+
+body.page-wrap {
+  transform: translate3d(0, 0, 0);
+}
+
 /* basic padded container, centered with a max-width */
 .container {
   width: 100%;
