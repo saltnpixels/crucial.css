@@ -29,17 +29,19 @@ However, there still are a few issues. Unlike javascript, CSS still cannot be us
 
 6. Images are responsive. All images will shrink to fit in their containers by default.
 
+7. Unordered lists found in a nav element have styles removed.
+
 ## Utilities
 
-Ok, so maybe a few utilities could be helpful. Only a few! Based on most websites out there, we created **9** utility classes that can be added in optionally by including the utilities file. These provide some basic and nifty layout classes to get you started, and to get any complexity out of the way. Sizing can be changed through the variables listed down below.
+Ok, so maybe a few utilities could be helpful. Only a few! Based on most websites out there, we created **9** utility classes that can be added in optionally by including the utilities file. These provide some basic and nifty layout classes to jumpstart your project, and to get any complexity out of the way. Sizing can be changed through the variables listed down below.
 
 #### `.container-fluid`
 
-creates your typical everyday container that goes full width. It just gives you padding on both the right and left, so your content is not up against the viewport edges.
+Creates your typical everyday container that goes full width. It just gives you padding on both, the right and left, so your content is not up against the viewport edges. This is standard practice.
 
 #### `.container`
 
-Like above, except it's got a max-width of 1200px (you can change this via the CSS variables).
+Like above, except it's got a max-width of 1200px (you can change this via the CSS variables). It is also centered.
 
 #### `.container-left`
 
@@ -51,11 +53,11 @@ A cool class that makes a container that goes all the way to the right edge, but
 
 #### `.screen-reader-text`
 
-Important! For elements that will be read out loud on a screen reader device, but will be hidden on regular browsers. Good for ADA compliance.
+For elements that will be read out loud on a screen reader device, but will be hidden on regular browsers. Good for ADA compliance.
 
 #### `.vertical-spacing`
 
-Very helpful for articles. Makes all items inside magically have good vertical rhythm. For some items, like headings, you may want to add styles to get those having more spacing with margins. Pairs well with container-content.
+Very helpful for articles. Makes all items inside magically have good vertical rhythm. For some items, like headings, you may want to add styles to get those having more spacing with margins. Pairs well with `.container-content`.
 
 #### `.page-wrap`
 
@@ -97,7 +99,7 @@ Then in your CSS, you can override the card-grids sizing, using a custom class. 
 
 #### `.container-content`
 
-This one is the last and most complex. It's very helpful for articles or the main content on a blog page. A lot of CMS's simply dump out the article and you have no control over the inner elements and their widths. For article text, you want a thin line width for easy reading, but for an image, or slideshow in the middle, you want to break out of that small container and go full width.
+This one is the last and most complex. It's very helpful for articles or the main content on a blog page. A lot of CMS's simply dump out the article and you have no control over the inner elements and their widths. For example, you may want article text to have a thin line width for easy reading, but for an image, or slideshow in the middle, you want to break out of that small container and go full width.
 
 Thats where `.container-content` makes this easy. You surround the article with it and it gives each direct child a max-width. When you want to break out of that, simply give a child a class of:
 
@@ -109,9 +111,11 @@ Thats where `.container-content` makes this easy. You surround the article with 
 
 4. WordPress support - you can use `.alignwide` instead of `.container` and `.alignfull` instead of `.full-width`. The classes do the same thing.
 
+See the demo to understand how it all works.
+
 ## CSS Variables
 
-There are variables found at the bottom of Crucial.CSS and utilities. You can override them in your project, or change them directly. Remember, you can also override variables inside classes and media queries, which is super helpful. Here are all the variables:
+There are variables found at the bottom of Crucial.CSS and Utilities. You can override them in your project, or change them directly. Remember, you can also override variables inside classes and media queries, which is super helpful. Here are all the variables:
 
 ```CSS
 :root {
@@ -119,7 +123,7 @@ There are variables found at the bottom of Crucial.CSS and utilities. You can ov
   --font-primary: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 
-  /* Default Font Size */
+  /* Default Font Size 16px */
   --fs-default: 1.6rem;
 
    /* spacing variables */
@@ -171,16 +175,16 @@ or
 
 ## Install With CDN
 
-You can pull it in from a cdn
+You can pull it in from a CDN
 
-- [unpkg](https://unpkg.com/crucial.css@1.0.0/curcial.css)
+- [unpkg - Crucial](https://unpkg.com/crucial.css/crucial.css)
+- [unpkg - Crucial Utilities](https://unpkg.com/crucial.css/utilities.css)
 
 ### Usage With CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/crucial.css@1.0.0/crucial.css" />
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/crucial.css@1.0.0/utilities.css"
-/>
+<link rel="stylesheet" href="https://unpkg.com/crucial.css/crucial.css" />
+<link rel="stylesheet" href="https://unpkg.com/crucial.css/utilities.css" />
 ```
+
+If you feel there is something missing from Crucial, please reach out!
