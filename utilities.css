@@ -22,18 +22,20 @@
 }
 
 /* 
-Special div to fix overflow-x on absolute items.
+ Special div to fix overflow-x on absolute items.
  This should be at the top level item inside body
  */
 .page-wrap {
   overflow-x: hidden;
 }
 
+/* as a div inside body, this now will hold the footer */
 div.page-wrap {
   position: relative;
   min-height: 100%;
 }
 
+/* quirky fix for body in iOS */
 body.page-wrap {
   transform: translate3d(0, 0, 0);
 }
