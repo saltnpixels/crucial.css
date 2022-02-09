@@ -1,4 +1,4 @@
-/*! Crucial.CSS v1.0.0 | MIT License | https://github.com/saltnpixels/curcial.css */
+/*! Crucial.CSS v1.0.8 | MIT License | https://github.com/saltnpixels/curcial.css */
 
 /* Document
    ========================================================================== */
@@ -131,6 +131,7 @@ h1 {
   font-size: 3rem;
 }
 
+/* spacing between paragraphs */
 p + p {
   margin-top: 1.5em;
 }
@@ -330,7 +331,8 @@ object {
   vertical-align: middle;
 }
 
-img {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }

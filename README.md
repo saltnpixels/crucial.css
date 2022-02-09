@@ -27,7 +27,7 @@ However, there still are a few issues. Unlike javascript, CSS still cannot be us
 
 5. Sticky Footer. We use this [elegant solution](https://css-tricks.com/a-clever-sticky-footer-technique/) to make sure your footer is always at the bottom of the site, even when you have very little content on the page. This expects your footer to be directly in the body, or directly inside a `.page-wrap` element. If you need a different setup with sticky footer, you can view and implement these [other solutions](https://css-tricks.com/couple-takes-sticky-footer/).
 
-6. Images are responsive. All images will shrink to fit in their containers by default.
+6. Images and SVG's are responsive. All images will shrink to fit in their containers by default.
 
 7. Unordered lists found in a nav element have styles removed.
 
