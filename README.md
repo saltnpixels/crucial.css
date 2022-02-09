@@ -179,15 +179,19 @@ or
 
 You can pull it in from a CDN
 
-- [unpkg - Crucial](https://unpkg.com/crucial.css@1.0.7/crucial.css)
-- [unpkg - Crucial Utilities](https://unpkg.com/crucial.css@1.0.7/utilities.css)
+- [unpkg - Crucial](https://unpkg.com/crucial.css@1.0.8/crucial.css)
+- [unpkg - Crucial Utilities](https://unpkg.com/crucial.css@1.0.8/utilities.css)
 
 ### Usage With CDN
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/crucial.css@1.0.7/crucial.css" />
-<link rel="stylesheet" href="https://unpkg.com/crucial.css@1.0.7/utilities.css" />
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/crucial.css@1.0.7/utilities.css"
+/>
 ```
 
 If you feel there is something missing from Crucial, please reach out!
+
 Shout out to Chris Coyer for teaching me CSS tips and tricks over the years. A lot of the major ones made it into Crucial.
