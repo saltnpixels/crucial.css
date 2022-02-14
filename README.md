@@ -185,10 +185,10 @@ You can pull it in from a CDN
 ### Usage With CDN
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/crucial.css@1.0.7/crucial.css" />
+<link rel="stylesheet" href="https://unpkg.com/crucial.css@1.0.8/crucial.css" />
 <link
   rel="stylesheet"
-  href="https://unpkg.com/crucial.css@1.0.7/utilities.css"
+  href="https://unpkg.com/crucial.css@1.0.8/utilities.css"
 />
 ```
 
