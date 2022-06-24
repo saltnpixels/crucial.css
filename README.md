@@ -101,7 +101,7 @@ Then in your CSS, you can override the card-grids sizing, using a custom class. 
 
 #### `.container-content`
 
-This one is the last and most complex. It's very helpful for articles or the main content on a blog page. A lot of CMS's simply dump out the article and you have no control over the inner elements and their widths. For example, you may want article text to have a thin line width for easy reading, but for an image, or slideshow in the middle, you want to break out of that small container and go full width.
+This one is the last and most complex. It's very helpful for articles or the main content on a blog page. A lot of CMS's simply dump out the article and you have no control over the inner elements and their widths. For example, you may want article text to have a narrow line width for easy reading, but for an image, or slideshow in the middle, you want to break out of that small container and go full width.
 
 Thats where `.container-content` makes this easy. You surround the article with it and it gives each direct child a max-width. When you want to break out of that, simply give a child a class of:
 
