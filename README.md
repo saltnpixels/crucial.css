@@ -63,7 +63,7 @@ Very helpful for articles. Makes all items inside magically have good vertical r
 
 #### `.page-wrap`
 
-The page wrap is a special element when dealing with overflow-x. It's useful when you have absolute items positioned off the screen, but don't want horizontal scrolling, like a hidden mobile menu. This class fixes it, so that it works nicely even on iOS, where things can get wonky. You can implement it directly on the body element, or on a div that is a direct child of body.
+The page wrap is a special element when dealing with overflow-x. It's useful when you have absolute items positioned off the screen, but don't want horizontal scrolling, like a hidden mobile menu. This class fixes it, so that it works nicely even on mobile devices, where things can get wonky. You can implement it directly on the body element, or on a div that is a direct child of body. This element should hold everything on the page. It also makes sure position: sticky works as intended on a header or footer as you would expect. :)
 
 ```HTML
 <body class="page-wrap">
