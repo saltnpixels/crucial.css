@@ -30,6 +30,7 @@ html {
 
 /** 
  * Sticky Footer requires html and body have 100% height, so the footer stays at the bottom even when there is little content 
+ * Also 100% height is needed to get position sticky working once overflow-x is applied to html and possibly body
 */
 html,
 body {
