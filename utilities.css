@@ -26,7 +26,7 @@
  This should be on the body or right inside the body
  */
 .page-wrap {
-  overflow-x: hidden; /* stops overflow */
+  overflow-x: clip; /* stops overflow */
   transform: translate3d(0, 0, 0); /* quirky fix overflow-x on mobile. Can also use position relative; */
   height: 100%; /* needed for position sticky items inside */
 }
