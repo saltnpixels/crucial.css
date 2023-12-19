@@ -16,7 +16,7 @@ html {
   line-height: 1.5; /* 3 */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 *,
