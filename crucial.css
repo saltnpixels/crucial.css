@@ -28,18 +28,15 @@ html {
 /* Sections
    ========================================================================== */
 
-/** 
- * Sticky Footer requires html and body have 100% height, so the footer stays at the bottom even when there is little content 
- * Also 100% height is needed to get position sticky working once overflow-x is applied to html and possibly body
-*/
-html,
-body {
-  height: 100%;
+/* can be given to body or a direct inner div. Thisd should have a footer if you want a sticky footer */
+
+.site {
+ min-height: 100dvh;
 }
 
-/* .page-wrap is for if the utility is used, the footer might be inside there */
+/* .sticky footer */
 body > footer,
-.page-wrap > footer {
+.site > footer {
   position: sticky;
   top: 100vh;
 }
@@ -54,6 +51,7 @@ body {
   margin: 0; /* 1 */
   font-family: var(--font-primary); /* 2 */
   font-size: var(--fs-default); /* 3 */
+  min-height: 100dvh;
 }
 
 nav ul {
